@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/basketballicon"
+    tools:context="com.example.ganesh.courtcounter.MainActivity">
+ <LinearLayout
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:orientation="horizontal">
+<LinearLayout
+    android:layout_weight="1"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:text="Team A"
+       android:textStyle="bold"
+       android:textColor="@color/white"
+       android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+       android:padding="10dp"
+       android:gravity="center_horizontal"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="50sp"
+        android:id="@+id/team_a_score"
+        android:padding="20dp"
+        android:gravity="center_horizontal"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="+3 point"
+        android:id="@+id/point3btnA"
+        android:layout_margin="5dp"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="+2 point"
+        android:id="@+id/point2btnA"
+        android:layout_margin="5dp"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Free throw"
+        android:id="@+id/point1btnA"
+        android:layout_margin="5dp"/>
+</LinearLayout>
+  <View
+      android:layout_width="1dp"
+      android:layout_height="match_parent"
+      android:layout_marginTop="20dp"
+      android:background="@android:color/darker_gray"
+
+      ></View>
+ <LinearLayout
+     android:layout_weight="1"
+     android:layout_width="0dp"
+     android:layout_height="match_parent"
+     android:orientation="vertical">
+ <TextView
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:text="Team B"
+     android:textStyle="bold"
+     android:textColor="@color/white"
+     android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+     android:padding="10dp"
+     android:gravity="center_horizontal"/>
+ <TextView
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:text="0"
+     android:textStyle="bold"
+     android:textColor="@color/white"
+     android:textSize="50sp"
+     android:id="@+id/team_b_score"
+     android:padding="20dp"
+     android:gravity="center_horizontal"/>
+ <Button
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:text="+3 point"
+     android:id="@+id/point3btnB"
+     android:layout_margin="5dp"/>
+ <Button
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:text="+2 point"
+     android:id="@+id/point2btnB"
+     android:layout_margin="5dp"/>
+ <Button
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:text="Free throw"
+     android:id="@+id/point1btnB"
+     android:layout_margin="5dp"/>
+ </LinearLayout>
+ </LinearLayout>
+
+ <Button
+     android:id="@+id/reset"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:text="RESET"
+     android:layout_alignParentBottom="true"
+     android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
